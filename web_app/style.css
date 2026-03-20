@@ -1,3 +1,18 @@
+#play-btn {
+  font-size: 1.2em;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  align-self: center;
+  line-height: 1.2;
+}
+#play-btn:hover {
+  color: #00bfff;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -96,7 +111,7 @@ input[type="range"]:focus::-moz-range-thumb {
 input[type="range"]:focus {
   outline: none;
 }
-/* Leaflet Attribution & Controls ausblenden */
+
 .leaflet-control-attribution,
 .leaflet-control-zoom {
   display: none !important;

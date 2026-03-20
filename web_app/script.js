@@ -55,3 +55,54 @@ slider.addEventListener("input", () => {
     imageOverlays[y].setOpacity(y === year ? 1 : 0);
   });
 });
+
+// Play/Pause-Button Logik
+const playBtn = document.getElementById("play-btn");
+let playing = false;
+let playInterval = null;
+
+function setPlayIcon(isPlaying) {
+  playBtn.innerHTML = isPlaying
+    ? '<i class="bi bi-pause-fill"></i>'
+    : '<i class="bi bi-play-fill"></i>';
+}
+
+function playSlider() {
+  if (playing) return;
+  // Immer von vorne starten
+  slider.value = 0;
+  slider.dispatchEvent(new Event("input"));
+  playing = true;
+  setPlayIcon(true);
+  playInterval = setInterval(() => {
+    let idx = parseInt(slider.value, 10);
+    if (idx < years.length - 1) {
+      slider.value = idx + 1;
+      slider.dispatchEvent(new Event("input"));
+    } else {
+      pauseSlider();
+    }
+  }, 200);
+}
+
+function pauseSlider() {
+  playing = false;
+  setPlayIcon(false);
+  if (playInterval) clearInterval(playInterval);
+  playInterval = null;
+}
+
+playBtn.addEventListener("click", () => {
+  if (playing) {
+    pauseSlider();
+  } else {
+    playSlider();
+  }
+});
+
+// Initial Icon setzen
+setPlayIcon(false);
+
+// Stoppe Animation, wenn Slider manuell bewegt wird
+slider.addEventListener("mousedown", pauseSlider);
+slider.addEventListener("touchstart", pauseSlider);
