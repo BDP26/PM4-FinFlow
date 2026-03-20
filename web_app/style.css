@@ -1,0 +1,115 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+}
+#map {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 1;
+  background-color: #000000 !important;
+}
+.slider-container {
+  position: absolute;
+  left: 50%;
+  bottom: 4vh;
+  transform: translateX(-50%);
+  width: 65vw;
+  min-width: 320px;
+  max-width: 900px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 22px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.35);
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  gap: 1.5em;
+  backdrop-filter: blur(10px);
+}
+.year-label {
+  color: #fff;
+  font-size: 1.25em;
+  letter-spacing: 0.02em;
+  min-width: 80px;
+  text-align: left;
+  user-select: none;
+  text-shadow: 0 2px 8px #000a;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+  outline: none;
+  margin: 0 12px;
+  transition: background 0.2s;
+  box-shadow: 0 1px 6px #0006;
+}
+input[type="range"]:hover {
+  background: #444;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff 60%, #bbb 100%);
+  box-shadow: 0 2px 8px #0007;
+  border: 2px solid #222;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+input[type="range"]:hover::-webkit-slider-thumb {
+  box-shadow: 0 4px 16px #00bfff88, 0 2px 8px #0007;
+  border-color: #00bfff;
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 2px solid #00bfff;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff 60%, #bbb 100%);
+  box-shadow: 0 2px 8px #0007;
+  border: 2px solid #222;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  margin-top: 0px;
+}
+input[type="range"]:hover::-moz-range-thumb {
+  box-shadow: 0 4px 16px #00bfff88, 0 2px 8px #0007;
+  border-color: #00bfff;
+}
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 2px solid #00bfff;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+/* Leaflet Attribution & Controls ausblenden */
+.leaflet-control-attribution,
+.leaflet-control-zoom {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  .slider-container {
+    width: 96vw;
+    min-width: unset;
+    padding: 12px 8px;
+    font-size: 0.95em;
+  }
+  .year-label {
+    font-size: 1em;
+    min-width: 60px;
+  }
+}
