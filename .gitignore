@@ -1,1 +1,15 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
 
+.ipython/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+.env
+
+.DS_Store
