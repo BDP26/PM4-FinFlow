@@ -1,30 +1,110 @@
 scientificName,count,category
-Megaptera novaeangliae,398452,Cetacea
-Phocoena phocoena,279037,Cetacea
-Balaenoptera acutorostrata,253568,Cetacea
-Balaenoptera physalus,207832,Cetacea
-Tursiops truncatus,128053,Cetacea
-Delphinus delphis,93224,Cetacea
-Mesoplodon densirostris,51909,Cetacea
-Physeter macrocephalus,51774,Cetacea
-Delphinidae,29142,Cetacea
-Eschrichtius robustus,23729,Cetacea
-Mirounga leonina,1004968,Phocidae
-Leptonychotes weddellii,341491,Phocidae
-Halichoerus grypus,234351,Phocidae
-Lobodon carcinophagus,107210,Phocidae
-Phoca vitulina,87206,Phocidae
-Phoca largha,25056,Phocidae
-Pusa hispida,12353,Phocidae
-Histriophoca fasciata,10853,Phocidae
-Erignathus barbatus,10716,Phocidae
-Pusa hispida botnica,6575,Phocidae
-Chelonia mydas,205674,Cheloniidae
-Caretta caretta,153357,Cheloniidae
-Cheloniidae,11574,Cheloniidae
-Eretmochelys imbricata,11043,Cheloniidae
-Lepidochelys olivacea,10926,Cheloniidae
-Lepidochelys kempii,4510,Cheloniidae
-Natator depressus,2100,Cheloniidae
-Eretmochelys imbricata bissa,51,Cheloniidae
-Chelonia,23,Cheloniidae
+Scyliorhinus canicula,236523,Elasmobranchii
+Carcharhinus leucas,233198,Elasmobranchii
+Carcharhinus melanopterus,223553,Elasmobranchii
+Carcharhinus amblyrhynchos,218657,Elasmobranchii
+Squalus acanthias,176266,Elasmobranchii
+Bathyraja brachyurops,156565,Elasmobranchii
+Bathyraja albomaculata,108270,Elasmobranchii
+Squalus suckleyi,104933,Elasmobranchii
+Carcharhinus limbatus,79056,Elasmobranchii
+Rhinoptera bonasus,76347,Elasmobranchii
+Hydrolagus colliei,82849,Holocephali
+Chimaera monstrosa,14686,Holocephali
+Hydrolagus bemisi,3420,Holocephali
+Harriotta raleighana,3121,Holocephali
+Callorhinchus callorynchus,3036,Holocephali
+Hydrolagus novaezealandiae,2353,Holocephali
+Hydrolagus mirabilis,1261,Holocephali
+Callorhinchus milii,1173,Holocephali
+Rhinochimaera pacifica,966,Holocephali
+Callorhinchus capensis,916,Holocephali
+Scomber scombrus,243510,Scombridae
+Thunnus albacares,68086,Scombridae
+Thunnus alalunga,39562,Scombridae
+Thunnus obesus,30004,Scombridae
+Katsuwonus pelamis,18841,Scombridae
+Acanthocybium solandri,12469,Scombridae
+Thunnus orientalis,9830,Scombridae
+Scombridae,5636,Scombridae
+Thunnus thynnus,5161,Scombridae
+Scomberomorus commerson,4114,Scombridae
+Istiompax indica,5958,Istiophoridae
+Kajikia audax,5787,Istiophoridae
+Kajikia albida,1286,Istiophoridae
+Makaira nigricans,1253,Istiophoridae
+Istiophorus albicans,677,Istiophoridae
+Tetrapturus angustirostris,571,Istiophoridae
+Istiophoridae,383,Istiophoridae
+Makaira mazara,376,Istiophoridae
+Istiophorus platypterus,363,Istiophoridae
+Tetrapturus,134,Istiophoridae
+Xiphias gladius,93915,Xiphiidae
+Xiphiidae,276,Xiphiidae
+Clupea harengus,679740,Clupeidae
+Clupea pallasii,543030,Clupeidae
+Sprattus sprattus,168144,Clupeidae
+Sprattus fuegensis,8495,Clupeidae
+Hyperlophus vittatus,6714,Clupeidae
+Clupeidae,2632,Clupeidae
+Clupea,1835,Clupeidae
+Sprattus,205,Clupeidae
+Sprattus muelleri,76,Clupeidae
+Strangomera bentincki,46,Clupeidae
+Gadus morhua,2170583,Gadidae
+Melanogrammus aeglefinus,609864,Gadidae
+Merlangius merlangus,369993,Gadidae
+Micromesistius australis,186673,Gadidae
+Trisopterus minutus,146356,Gadidae
+Micromesistius poutassou,134133,Gadidae
+Trisopterus esmarkii,90505,Gadidae
+Pollachius virens,76128,Gadidae
+Gadus chalcogrammus,55409,Gadidae
+Gadus macrocephalus,52198,Gadidae
+Pleuronectes platessa,442474,Pleuronectiformes
+Limanda limanda,356184,Pleuronectiformes
+Hippoglossoides platessoides,269175,Pleuronectiformes
+Platichthys flesus,191266,Pleuronectiformes
+Glyptocephalus zachirus,132679,Pleuronectiformes
+Atheresthes stomias,126181,Pleuronectiformes
+Microstomus kitt,125090,Pleuronectiformes
+Lepidorhombus whiffiagonis,114000,Pleuronectiformes
+Solea solea,113928,Pleuronectiformes
+Glyptocephalus cynoglossus,100725,Pleuronectiformes
+Arctocephalus gazella,206025,Otariidae
+Neophoca cinerea,85004,Otariidae
+Phocarctos hookeri,33807,Otariidae
+Arctocephalus australis forsteri,24013,Otariidae
+Arctocephalus pusillus,12920,Otariidae
+Zalophus californianus,2842,Otariidae
+Otariidae,1779,Otariidae
+Callorhinus ursinus,961,Otariidae
+Otaria byronia,908,Otariidae
+Arctocephalus,448,Otariidae
+Odobenus rosmarus,2277,Odobenidae
+Odobenus rosmarus rosmarus,11,Odobenidae
+Trichechus manatus latirostris,20891,Sirenia
+Dugong dugon,16473,Sirenia
+Trichechus manatus,469,Sirenia
+Trichechus manatus manatus,35,Sirenia
+Dermochelys coriacea,17657,Dermochelyidae
+Eudyptula minor,500017,Sphenisciformes
+Aptenodytes patagonicus,176817,Sphenisciformes
+Pygoscelis adeliae,106237,Sphenisciformes
+Aptenodytes forsteri,84326,Sphenisciformes
+Eudyptes chrysolophus,74191,Sphenisciformes
+Pygoscelis papua,2719,Sphenisciformes
+Pygoscelis antarcticus,1441,Sphenisciformes
+Spheniscus demersus,285,Sphenisciformes
+Megadyptes antipodes,169,Sphenisciformes
+Eudyptes schlegeli,162,Sphenisciformes
+Doryteuthis gahi,2337210,Cephalopoda
+Illex argentinus,548306,Cephalopoda
+Loligo reynaudii,98180,Cephalopoda
+Illex illecebrosus,53609,Cephalopoda
+Loligo forbesii,52042,Cephalopoda
+Illex coindetii,27027,Cephalopoda
+Alloteuthis subulata,17085,Cephalopoda
+Sepia officinalis,16549,Cephalopoda
+Lolliguncula brevis,15667,Cephalopoda
+Todaropsis eblanae,14458,Cephalopoda
