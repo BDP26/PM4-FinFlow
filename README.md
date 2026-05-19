@@ -2,7 +2,7 @@
 
 FinFlow is a compact project that combines Global Fishing Watch (GFW) AIS data with OBIS biodiversity observations to produce maps, aggregated datasets and models for marine activity analysis.
 
-Table of contents
+## Table of contents
 
 - [Quickstart](#quickstart)
 - [Data layout](#data-layout)
@@ -11,9 +11,7 @@ Table of contents
 - [Authors & course](#authors--course)
 - [License](#license)
 
-Quickstart
-
---------
+## Quickstart
 
 - Python 3.9+ recommended.
 - Notebooks reference a shared data path used during development: `/mnt/shared_data/finflow/`. Adjust paths in each notebook to your local layout before running.
@@ -25,17 +23,13 @@ Install (minimal):
 pip install duckdb pandas pyarrow datashader colorcet plotly pydeck ray gfwapiclient
 ```
 
-Data layout
-
------------
+## Data layout
 
 - `/mnt/shared_data/finflow/gfw_raw/` — GFW monthly Parquet output (organized by year/month).
 - `/mnt/shared_data/finflow/obis_raw/` — OBIS raw Parquet files organized by taxa (input to OBIS pipelines).
 - `/mnt/shared_data/finflow/images/` — generated PNGs, basemap, tiles and web assets.
 
-Repository structure
-
---------------------
+## Repository structure
 
 `data_analysis/`
 
@@ -75,16 +69,12 @@ Repository structure
 - `data_prep.ipynb`, `sequence_files.ipynb`, `model_training.ipynb`, `anomaly_detection.ipynb` — notebooks for sequence prep, LSTM training and anomaly experiments.
 - `train_lstm.py`, `train_lstm_multi.py` — training scripts for sequence models.
 
-Key notebook notes
-
-------------------
+## Key notebook notes
 
 - Most notebooks include a short header cell describing purpose and key variables; open the first cell to see usage notes before running.
 - Several notebooks perform heavy computations and assume a cluster or sufficient local resources (Ray, Dask). Check each notebook's top cells for runtime requirements.
 
-Authors & course
-
-----------------
+## Authors & course
 
 - Sebastian Brütsch
 - Mika Segmüller
@@ -92,8 +82,6 @@ Authors & course
 
 This project was completed as part of the Big Data Project course at ZHAW. Heavy processing and distributed runs were executed on a Ray cluster provided for the course.
 
-License
-
--------
+## License
 
 This repository is a course/research project. Reuse and adaptation are permitted for educational purposes; please contact the authors for other uses.
